@@ -50,7 +50,7 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid rgb(2, 0, 10);
+	border: 2px solid rgb(56, 11, 239);
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -82,7 +82,7 @@ p {
 }
 #header .header {
 	min-height: 8vh;
-	background-color: rgba(31, 30, 30, 0.24);
+	background-color: rgba(255, 255, 255, 0.24);
 	transition: 0.3s ease background-color;
 }
 #header .nav-bar {
@@ -97,7 +97,7 @@ p {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(31, 30, 30);
+	background-color: rgb(249, 246, 246);
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -213,7 +213,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: black;
+	background-color: rgb(100, 97, 97);
 	opacity: 0.7;
 	z-index: -1;
 }
@@ -332,6 +332,7 @@ p {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
+
 }
 #projects .projects-header h1 {
 	margin-bottom: 50px;
@@ -375,11 +376,15 @@ p {
 #projects .project-info p {
 	color: white;
 }
+#project .project-img a {
+	display: inline-block;
+}
 #projects .project-img {
 	flex-basis: 50%;
 	height: 300px;
 	overflow: hidden;
-	position: relative;
+	/* position: relative; */
+	cursor: pointer;
 }
 #projects .project-img:after {
 	content: '';
@@ -406,10 +411,12 @@ p {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 20px;
+	background-color: #9ea8b3;
 }
 #about .col-left {
-	width: 250px;
+	width: 20px;
 	height: 360px;
+  margin-left: 120px;
 }
 #about .col-right {
 	width: 100%;
@@ -436,16 +443,22 @@ p {
 	border: 10px solid white;
 }
 #about .col-left .about-img::after {
-	content: '';
-	position: absolute;
-	left: -33px;
-	top: 19px;
-	height: 98%;
-	width: 98%;
-	border: 7px solid rgb(1, 0, 6);
-	z-index: -1;
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: 19px;
+  height: calc(100% - 38px); /* Adjust height to match the positioning offsets */
+  width: calc(100% - 6px); /* Adjust width to match the positioning offsets */
+  border: 7px solid rgb(1, 0, 6);
+  z-index: -1; /* Ensure the pseudo-element is behind the image */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+} */
+#about .col-left .about-img img {
+  display: block; /* Remove any inline spacing and ensure the image takes up its container */
+  width: 100%; /* Ensure the image scales with its container */
+  height: auto; /* Maintain aspect ratio */
 }
-/* End About Section */
+/* End About Section
 
 /* contact Section */
 #contact .contact {
@@ -615,17 +628,17 @@ p {
 		flex-direction: row;
 	}
 	#about .col-left {
-		width: 600px;
-		height: 400px;
-		padding-left: 60px;
+		width: 550px;
+		height: 250px;
+		padding-left: 170px;
 	}
-	#about .about .col-left .about-img::after {
-		left: -45px;
+	/* #about .about .col-left .about-img::after {
+		left: -5px;
 		top: 34px;
 		height: 98%;
 		width: 98%;
 		border: 10px solid rgb(0, 0, 10);
-	}
+	} */
 	#about .col-right {
 		text-align: left;
 		padding: 30px;
