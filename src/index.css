@@ -48,7 +48,7 @@ p {
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
-	color: white;
+	color: rgb(0, 0, 0);
 	background-color: transparent;
 	border: 2px solid rgb(56, 11, 239);
 	font-size: 2rem;
@@ -65,7 +65,7 @@ p {
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: white;
+	color: rgb(0, 0, 0);
 }
 .brand h1 span {
 	color: rgb(1, 0, 6);
@@ -97,7 +97,7 @@ p {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(249, 246, 246);
+	background-color: rgb(0, 0, 0);
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -118,7 +118,7 @@ p {
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
-	color: white;
+	color: rgb(8, 8, 8);
 	text-transform: uppercase;
 	padding: 20px;
 	display: block;
@@ -213,7 +213,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgb(100, 97, 97);
+	background-color: rgb(95, 91, 91);
 	opacity: 0.7;
 	z-index: -1;
 }
