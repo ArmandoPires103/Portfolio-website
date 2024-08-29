@@ -19,9 +19,6 @@ html {
 	align-items: center;
 	justify-content: center;
 }
-.nav-bar {
-	text-decoration: none;
-}
 img {
 	height: 100%;
 	width: 100%;
@@ -633,7 +630,8 @@ p {
 	#about .col-left {
 		width: 550px;
 		height: 250px;
-		padding-left: 170px;
+		/* padding-left: 20px; */
+		margin-left: 100px;
 	}
 	/* #about .about .col-left .about-img::after {
 		left: -5px;
