@@ -19,6 +19,9 @@ html {
 	align-items: center;
 	justify-content: center;
 }
+.nav-bar {
+	text-decoration: none;
+}
 img {
 	height: 100%;
 	width: 100%;
@@ -48,7 +51,7 @@ p {
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	background-color: transparent;
 	border: 2px solid rgb(56, 11, 239);
 	font-size: 2rem;
